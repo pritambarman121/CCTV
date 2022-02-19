@@ -5,7 +5,7 @@ def record():
     cap = cv2.VideoCapture(0)
 
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
-    storage = cv2.VideoWriter(f'recordings/{datetime.now().strftime("%H-%M-%S")}',fourcc,20.0,(640,480))
+    storage = cv2.VideoWriter(f'recordings/{datetime.now().strftime("%H-%M-%S")}.avi',fourcc,20.0,(640,480))
 
     while True:
         ret,frame=cap.read()
