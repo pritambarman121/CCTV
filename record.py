@@ -9,10 +9,10 @@ def record():
 
     while True:
         ret,frame=cap.read()
-        cv2.putText(frame,f'{datetime.now().strftime("%D-%H-%M-%S")}',(50,50),cv2.FONT_HERSHEY_COMPLEX,0.6,(255,255,255),2)
+        cv2.putText(frame,f'{datetime.now().strftime("%D-%H-%M-%S")}',(30,40),cv2.FONT_ITALIC,0.5,(255,255,255),2)
         storage.write(frame)
 
-        cv2.imshow('esc to stop',frame)
+        cv2.imshow('ESC to stop',frame)
 
         if cv2.waitKey(1)==27:
             cap.release()
