@@ -30,12 +30,12 @@ btn=Button(mainFrame,font=('Helvitica',20,'bold'),height=90,width=200,image=btn_
 btn.grid(row=1,pady=(20,10),column=0)
 
 #file btn
-btn_image1=Image.open('icons/File.png')
-btn_image1=btn_image1.resize((60,60),Image.ANTIALIAS)
-btn_image1=ImageTk.PhotoImage(btn_image1)
+#btn_image1=Image.open('icons/File.png')
+#btn_image1=btn_image1.resize((60,60),Image.ANTIALIAS)
+#btn_image1=ImageTk.PhotoImage(btn_image1)
 
-btn=Button(mainFrame,font=('Helvitica',20,'bold'),height=90,width=200,image=btn_image1,compound='left')
-btn.grid(row=1,pady=(10,10),column=1)
+#btn=Button(mainFrame,font=('Helvitica',20,'bold'),height=90,width=200,image=btn_image1,compound='left')
+#btn.grid(row=1,pady=(10,10),column=1)
 
 #exit btn
 btn_image2=Image.open('icons/exit.png')
